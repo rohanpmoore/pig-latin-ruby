@@ -33,3 +33,12 @@ def first_vowel(word)
   end
   first_vowel
 end
+
+def pig_latin_sentence(sentence)
+  words_array = sentence.split()
+  translated_sentence = ""
+  words_array.each do |word|
+    translated_sentence +=  "#{pig_latin(word)} "
+  end
+  translated_sentence
+end

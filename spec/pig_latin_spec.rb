@@ -21,6 +21,6 @@ describe('pig_latin') do
     expect(pig_latin("yard")).to(eq("ardyay"))
   end
   it('will translate words in a sentence and return the translated sentence') do
-    expect(pig_latin_sentence("this is a pig latin sentence")).to(eq("isthay isway away igpay attinlay entencesay"))
+    expect(pig_latin_sentence("this is a pig latin sentence")).to(eq("isthay isway away igpay atinlay entencesay "))
   end
 end
