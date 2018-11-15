@@ -23,7 +23,13 @@ def first_vowel(word)
         break
       end
     end
+    if first_vowel != 0
+      break
+    end
     index += 1
+  end
+  if (first_vowel != 0) & ((word[first_vowel] == "u") & (word[first_vowel - 1] == "q"))
+    first_vowel += 1
   end
   first_vowel
 end
