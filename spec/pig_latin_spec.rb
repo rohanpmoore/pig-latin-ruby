@@ -20,4 +20,7 @@ describe('pig_latin') do
   it('for words beginning in "y", it will treat "y" as a consonant') do
     expect(pig_latin("yard")).to(eq("ardyay"))
   end
+  it('will translate words in a sentence and return the translated sentence') do
+    expect(pig_latin_sentence("this is a pig latin sentence")).to(eq("isthay isway away igpay attinlay entencesay"))
+  end
 end
