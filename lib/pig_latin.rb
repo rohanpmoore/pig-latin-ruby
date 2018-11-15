@@ -26,9 +26,4 @@ def first_vowel(word)
     index += 1
   end
   first_vowel
-  # vowel_index = []
-  # vowels.each do |vowel|
-  #   vowel_index.push(word.index(vowel))
-  # end
-  # vowel_index[0]
 end

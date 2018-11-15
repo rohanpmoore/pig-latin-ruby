@@ -14,4 +14,7 @@ describe('pig_latin') do
   it('will move all beginning consonants from the front to end of a word and add "ay"') do
     expect(pig_latin("snack")).to(eq("acksnay"))
   end
+  it('will move u with q if q is in the initial consonants') do
+    expect(pig_latin("squeak")).to(eq("eaksquay"))
+  end
 end
