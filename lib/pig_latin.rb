@@ -10,7 +10,3 @@ def pig_latin(word)
     pig_latin += "#{word[1..-1]}#{word[0,1]}ay"
   end
 end
-
-this_word = "trash"
-new_word = this_word[1..-1]
-print "#{new_word}"
