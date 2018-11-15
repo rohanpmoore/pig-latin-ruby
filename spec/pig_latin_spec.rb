@@ -17,4 +17,7 @@ describe('pig_latin') do
   it('will move u with q if q is in the initial consonants') do
     expect(pig_latin("squeak")).to(eq("eaksquay"))
   end
+  it('for words beginning in "y", it will treat "y" as a consonant') do
+    expect(pig_latin("yard")).to(eq("ardyay"))
+  end
 end

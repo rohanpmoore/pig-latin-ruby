@@ -1,7 +1,7 @@
 require 'pry'
 
 def pig_latin(word)
-  vowels = ["a", "e", "i", "o", "u", "y"]
+  vowels = ["a", "e", "i", "o", "u"]
   pig_latin = ""
   first_letter = word[0,1]
   index_of_first_vowel = first_vowel(word)
@@ -18,7 +18,7 @@ def first_vowel(word)
   first_vowel = 0
   while index < word.length
     vowels.each do |vowel|
-      if word[index] == vowel
+      if (word[index] == vowel) & !((index == 0) & (vowel == "y"))
         first_vowel = index
         break
       end
