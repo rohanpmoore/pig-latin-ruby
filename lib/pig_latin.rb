@@ -6,5 +6,11 @@ def pig_latin(word)
   first_letter = word[0,1]
   if vowels.include?(first_letter)
     pig_latin += "#{word}way"
+  else
+    pig_latin += "#{word[1..-1]}#{word[0,1]}ay"
   end
 end
+
+this_word = "trash"
+new_word = this_word[1..-1]
+print "#{new_word}"
